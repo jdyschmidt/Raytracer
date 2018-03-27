@@ -37,13 +37,13 @@ glossy reflection and refraction is available.
     1. With texture and objects: ![Normals](/renders/normalscolours.png)
 
 1.  A final scene is created which demonstrates an object behind refractive materials.
-    1. Showing different DoF lengths. No DoF: [!Final](/renders/final.png)
-    1. DoF short to long: [!Final](/renders/finaldofclose.png) [!Final](/renders/finaldofmed.png) [!Final](/renders/finaldoffar.png)
+    1. Showing different DoF lengths. No DoF: ![Final](/renders/final.png)
+    1. DoF short to long: ![Final](/renders/finaldofclose.png) ![Final](/renders/finaldofmed.png) ![Final](/renders/finaldoffar.png)
 
 Prettiest pictures by far:
-[!Complex](/renders/complex.png)
-[!Complex](/renders/complexdof.png)
-[!Complex](/renders/complexgloss.png)
+![Complex](/renders/complex.png)
+![Complex](/renders/complexdof.png)
+![Complex](/renders/complexgloss.png)
 
 Notes:
 * Multithreading is on by default, and must be recompiled to disable it. (It gives roughly 5x speedup, using 8 threads.)
