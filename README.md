@@ -2,6 +2,17 @@
 This project focuses on crisp images simulating reflection and refraction. Depth of field is used to focus on certain areas, and
 glossy reflection and refraction is available.
 
+
+
+#### Notes:
+* Multithreading is on by default, and must be recompiled to disable it. (It gives roughly 5x speedup, using 8 threads.)
+* Rays bounce up to twice.
+* Glossiness, transparency, and refractive index are all optional parameters on materials in the lua scripts.
+* Depth of field blur amount and focal distance are optional parameters on the render command.
+
+Constructive solid geometry was originally planned for this project, and is half implemented. But it didn't make the cut.
+
+
 ### Objectives:
 1.  New primitives are added and can be intersected: cone, semisphere, cylinder. These are fixed size but can be modified by hierarchical transformation. 
 ![Primitives](/renders/primitives.png)
@@ -68,11 +79,3 @@ Prettiest pictures by far:
 ![Complex](/renders/complex.png)
 ![Complex](/renders/complexdof.png)
 ![Complex](/renders/complexgloss.png)
-
-Notes:
-* Multithreading is on by default, and must be recompiled to disable it. (It gives roughly 5x speedup, using 8 threads.)
-* Rays bounce up to twice.
-* Glossiness, transparency, and refractive index are all optional parameters on materials in the lua scripts.
-* Depth of field blur amount and focal distance are optional parameters on the render command.
-
-Constructive solid geometry was originally planned for this project, and is half implemented. But it didn't make the cut.
